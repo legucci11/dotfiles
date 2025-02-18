@@ -1,0 +1,24 @@
+# Reload functions
+super + Escape
+	pkill -x sxhkd
+
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}' 
+
+super + {_,shift + }{1-9,0}
+  	bspc {desktop -f, node -d} '^{1-9,10}'
+
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node --{focus,swap} {west,south,north,east} 
+
+super + {_,shift + }q
+	bspc node -{c,k}
+ 
+super + {e,shift + e,s,t}
+	bspc node -t {\~fullscreen,\~tiled, \~floating,\~psuedo_tiled} 
+
+super + Return
+	alacritty
+
+super + space
+	rofi -show drun

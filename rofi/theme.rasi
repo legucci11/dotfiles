@@ -1,0 +1,31 @@
+* {
+  text-color: rgb(248,227,255);
+  background-color: rgb(0,1,46);
+  border-color: rgb(147, 200, 253);
+}
+configuration {
+	modi: "drun";
+    show-icons: false;
+    display-drun: "";
+	drun-display-format: "{name}";
+}
+window {
+        width: 28%;
+        height: 33%;
+				border: 2px;
+				border-radius: 5px;
+}
+inputbar {
+    padding:                     13px 10px;
+    border:                      0px;
+    border-radius:               0px;
+    children:                    [ "prompt", "entry" ];
+}
+entry {
+	enabled: true;
+	placeholder: "Search";
+}
+element {
+	spacing: 0px;
+	padding: 5px 13px;
+}
